@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "essentials",
+  "info": {
+    "name": "Essentials"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "lines": {
+      "type": "richtext"
+    },
+    "country": {
+      "via": "essentials",
+      "model": "countries"
+    }
+  }
+}

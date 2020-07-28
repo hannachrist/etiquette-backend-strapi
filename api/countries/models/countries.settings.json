@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "name": "Countries"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "country_code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "topics": {
+      "collection": "topics",
+      "via": "country"
+    },
+    "essentials": {
+      "collection": "essentials",
+      "via": "country"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

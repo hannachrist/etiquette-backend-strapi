@@ -1,19 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "topics",
   "info": {
-    "name": "article"
+    "name": "topics"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "type": {
       "type": "string"
     },
-    "content": {
+    "lines": {
       "type": "richtext"
+    },
+    "country": {
+      "via": "topics",
+      "model": "countries"
     }
   }
 }

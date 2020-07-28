@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/essentials",
+      "handler": "essentials.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/essentials/count",
+      "handler": "essentials.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/essentials/:id",
+      "handler": "essentials.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/essentials",
+      "handler": "essentials.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/essentials/:id",
+      "handler": "essentials.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/essentials/:id",
+      "handler": "essentials.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
