@@ -24,7 +24,7 @@
       "via": "country"
     },
     "banner": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
